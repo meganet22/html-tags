@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>
+
+    </title>
+    </head>
+    <body>
+    <p id="paragraf">Javascript</p>
+    <ul id="aylar"><li>Ocak</li><li>Şubat</li><li>Mart</li></ul>
+    <script>
+    document.getElementById("paragraf").innerHTML = "İlk 4 Aylar";
+
+    var yeni = document.createElement ("li");
+    yeni.innerHTML = "Nisan";
+    var liste = document.getElementById("aylar");
+    liste.appendChild(yeni);
+
+
+    </script>
+    </body>
+</html>

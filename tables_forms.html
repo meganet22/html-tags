@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="775" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>Table</th>
+            <th>Table</th>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+-----------------------------------------------------------------
+    <table>
+        <caption>Not Bilgileri Tablosu</caption>
+        <tr>
+            <th>Adı Soyadı</th>
+            <td>Ezgi Doğan</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Vize</th>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <table width="775" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td rowspan="2">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <TABLE border="1" cellspacing="0" cellpadding="0" width="100" height="200" bgColor="#000000">
+        <TBODY>
+            <TR>
+                <TD>Hücre Alanı</TD>
+            </TR></TBODY></TABLE>
+    -----------------------------------------------------------------
+    //Formlar Post Methodu
+    <form method="Post" action="canhocam.asp">
+        <pre>
+    İsim:<input type="text" name="ad" size="20" maxlength="50">
+    Soyisim:<input type="text" name="soyad" size="20" maxlength="100">
+    E-mail:<input type="text" name="mail" size="20" maxlength="100">
+    Yorumunuz:<textarea name="yorum" cols="15" rows="10"></textarea>
+    </pre>
+    <input type="submit" name="submit2" value="Formu gönder">
+    <input type="reset" name="reset2" value="Formu sil">
+    </form>
+
+    canhocam.asp?mail=cawebdesign14@outlook.com&ad=Can&soyad=Ata
+
+    <textarea name="isim" cols="15" rows="10"></textarea>
+
+    //Formlar Get Methodu
+    <form method="Get" action="canhocam.asp">
+        <pre>
+    İsim:<input type="text" name="ad" size="20" maxlength="50">
+    Soyisim:<input type="text" name="soyad" size="20" maxlength="100">
+    E-mail:<input type="text" name="mail" size="20" maxlength="100">
+    </pre>
+    <input type="submit" name="submit2" value="Formu gönder">
+    <input type="reset" name="reset2" value="Formu sil">
+    </form>
+    -----------------------------------------------------------------
+
+    <select name="site" size="1" multiple><option value="canhocam">canhocam.com</option><option value="canhocam">canhocam.com</option></select>
+
+    <form>
+        Ad:<input type="text" name="isim">
+        Ad:<input type="text" maxlength="5">
+        Soyad:<input type="text" name="soyisim">
+        Şifre:<input type="password" name="sifre">
+        Doğum Tarihi:<input type="date" name="dtarihi">
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırlama">
+        <input type="button" value="Buton">
+    </form>
+    <br>
+    <form>
+        Ürün Sayısı: 1<input type="range" name="Sayı" value="1" min="1" max="10">10<br>
+        Ürün Sayısı: 1<input type="number" name="Sayı" value="1" min="1" max="10" step="1">10
+    </form>
+    <br>
+    <form>
+        Ürün Sayısı: 1<input type="checkbox" name="renk1" value="Kırmızı">Kırmızı<br>
+        Ürün Sayısı: 1<input type="checkbox" name="renk2" value="Beyaz">Beyaz<br>
+        Ürün Sayısı: 1<input type="checkbox" name="renk3" value="Siyah">Siyah<br>
+
+        Ürün Sayısı: 1<input type="radio" name="cinsiyet" value="Kadın">Kadın<br>
+        Ürün Sayısı: 1<input type="radio" name="cinsiyet" value="Erkek">Erkek<br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırlama">
+    </form>
+    <br>
+    <form>
+        Ürün Sayısı: 1<input type="button" value="Mesaj Gönder" onclick="mesaj()">10<br>
+
+    </form>
+    <script>
+        function mesaj()
+        {
+            alert("Selamlar");
+        }
+    </script>
+    <br><br>
+
+    <fieldset>
+        <legend>Başlık</legend>
+        Ad:<input type="text" name="isim">
+        Soyad:<input type="text" name="soyisim">
+        Şifre:<input type="password" name="sifre">
+        Doğum Tarihi:<input type="date" name="dtarihi">
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırlama">
+    </fieldset>
+    <br><br>
+    <select name="Şehirler Listesi">
+        <optgroup label="İç Anadolu">
+            <option value="1">Ankara</option>
+            <option value="2">Eskişehir</option>
+            <option value="3">Konya</option>
+        </optgroup>
+        <optgroup label="Ege">
+            <option value="1">İzmir</option>
+            <option value="2">Aydın</option>
+            <option value="3">Denizli</option>
+        </optgroup>
+    </select>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+p {
+    color: red;
+    text-indent: 200px;
+}
+
+aside {
+    width: 220px;
+    height: 370px;
+    margin: 10 0 0 10;
+    background-color: #016BB7;
+    float: left;
+    border: 5px solid;
+    border-color: #016BB7;
+    border-radius: 5px;
+    font: 14px arial;
+    color: white;
+}
